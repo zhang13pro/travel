@@ -23,7 +23,7 @@ import java.io.IOException;
 * */
 public class RouteServlet extends BaseServlet {
     private RouteService service = new RouteServiceImpl();
-
+    //显示所有页
     public void pageQuery(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //1接受参数
         String currentPageStr = request.getParameter("currentPage");
@@ -31,24 +31,34 @@ public class RouteServlet extends BaseServlet {
         String cidStr = request.getParameter("cid");
         //2处理参数
         int cid = 0; //类别id
-        if (cidStr != null && cidStr.length() > 0){
+        if (cidStr != null && cidStr.length() > 0) {
             cid = Integer.parseInt(cidStr);
         }
         int currentPage = 0;
-        if (currentPageStr != null && currentPageStr.length() > 0){
+        if (currentPageStr != null && currentPageStr.length() > 0) {
             currentPage = Integer.parseInt(currentPageStr);
-        }else {
+        } else {
             currentPage = 1;
         }
         int pageSize = 0; //每页显示条数 默认5
-        if (pageSizeStr != null && pageSizeStr.length() > 0){
+        if (pageSizeStr != null && pageSizeStr.length() > 0) {
             pageSize = Integer.parseInt(pageSizeStr);
-        }else {
+        } else {
             pageSize = 5;
         }
         //3 调用service查询pagebean对象
         PageBean<Route> pb = service.pageQuery(cid, currentPage, pageSize);
         //4 将pagebean对象序列化为json返回
-        writeValue(pb,response);
+        writeValue(pb, response);
+    }
+
+    //根据id查询一个旅游线路的详细信息
+    public void findOne(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //1接收客户端rid
+        String rid = request.getParameter("rid");
+        //2调用service查询route对象
+        Route route = service.findOne(rid);
+        //3转为json写回客户端
+        writeValue(route,response);
     }
 }

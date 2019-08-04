@@ -14,4 +14,6 @@ public interface RouteDao {
     int findTotalCount(int cid);
     //根据cid  start pageSize 查询当前页的数据集合
     List<Route> findByPage(int cid,int start,int pageSize);
+
+    Route findOne(int rid);
 }
