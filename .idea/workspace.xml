@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28542898-61e2-4834-a516-afccfc65ee4a" name="Default Changelist" comment="搜索模块的后台实现">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/RouteImgDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/SellerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/RouteImgDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/SellerDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TieHanhan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TieHanhan/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/RouteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/RouteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/RouteDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/RouteDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/RouteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/RouteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/RouteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/RouteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/RouteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/RouteServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/route_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/route_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/route_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/route_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/RouteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/RouteDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/impl/RouteDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/impl/RouteDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/RouteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/RouteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/RouteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/RouteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/web/servlet/RouteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/web/servlet/RouteServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-08-04" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-08-04" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/route_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="194" column="99" lean-forward="true" selection-start-line="194" selection-start-column="99" selection-end-line="194" selection-end-column="99" />
+            <state relative-caret-position="158">
+              <caret line="192" column="24" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="24" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -376,7 +363,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564929158632" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564934737175" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
@@ -462,7 +449,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564884336360</updated>
       <workItem from="1564884337582" duration="1066000" />
-      <workItem from="1564892033090" duration="27517000" />
+      <workItem from="1564892033090" duration="28101000" />
     </task>
     <task id="LOCAL-00001" summary="搜索模块的后台实现">
       <created>1564905629206</created>
@@ -478,17 +465,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564909269908</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="前端线路详情实现">
+      <created>1564929373312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564929373312</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28583000" />
+    <option name="totallyTimeSpent" value="29167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="23" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2166532" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2166532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -603,7 +597,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="搜索模块的后台实现" />
     <MESSAGE value="还原到分页" />
-    <option name="LAST_COMMIT_MESSAGE" value="还原到分页" />
+    <MESSAGE value="前端线路详情实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端线路详情实现" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/ProvinceDaoImpl.java" />
@@ -782,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/route_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="194" column="99" lean-forward="true" selection-start-line="194" selection-start-column="99" selection-end-line="194" selection-end-column="99" />
+        <state relative-caret-position="158">
+          <caret line="192" column="24" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="24" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
