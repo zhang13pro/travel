@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示城市</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //发送Ajax请求 加载所有省份数据
+            //TODO cant find provinceServlet redis案例
+            $.get("provinceServlet",{},function (data) {
+                var province = $("#province");
+                $(data).each(function () {
+                    var option = "<option name='"+this.id+"'>"+this.name+"</option>"
+                    province.append(option);
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+
+    <select id="province">
+        <option>--请选择省份--</option>
+    </select>
+</body>
+</html>
