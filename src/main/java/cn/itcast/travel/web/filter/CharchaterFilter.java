@@ -22,9 +22,9 @@ public class CharchaterFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain filterChain) throws IOException, ServletException {
-/*        //将父接口转为子接口
+        //将父接口转为子接口
         HttpServletRequest request = (HttpServletRequest) req;
-        HttpServletResponse response = (HttpServletResponse) rep;
+        HttpServletResponse response = (HttpServletResponse) resp;
         //获取请求方法
         String method = request.getMethod();
         //解决post请求中文数据乱码问题
@@ -33,10 +33,10 @@ public class CharchaterFilter implements Filter {
         }
         //处理响应乱码
         response.setContentType("text/html;charset=UTF-8");
-        filterChain.doFilter(request,response);*/
-        req.setCharacterEncoding("UTF-8");
+        filterChain.doFilter(request,response);
+        /*req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
-        filterChain.doFilter(req,resp);
+        filterChain.doFilter(req,resp);*/
     }
 
 
