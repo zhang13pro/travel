@@ -13,18 +13,16 @@
 
     <script>
         $(function () {
-            /*  var search = location.search;
+            var search = location.search;
             //切割字符串，拿到第二个值
-            var cid = search.split("=")[1];*/
+            var cid = search.split("=")[1];
             //获取cid rname
-            var cid = getParameter("cid");
+/*            var cid = getParameter("cid");
             var rname = getParameter("rname");
             //rname 不为null或“” 解码
             if (rname){
                 rname = window.decodeURIComponent(rname);
-            }
-            alert(cid);
-            alert(rname);
+            }*/
             //页面加载完成后 调用方法  加载数据
             load(cid);
         })

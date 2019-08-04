@@ -9,5 +9,5 @@ import cn.itcast.travel.domain.Route;
  * @Version：1.0
  */
 public interface RouteService {
-    PageBean<Route> pageQuery(int cid,int currentPage,int pageSize,String rname);
+    PageBean<Route> pageQuery(int cid,int currentPage,int pageSize);
 }

@@ -34,7 +34,7 @@ public class CharchaterFilter implements Filter {
         //处理响应乱码
         response.setContentType("text/html;charset=UTF-8");
         filterChain.doFilter(request,response);
-        /*req.setCharacterEncoding("UTF-8");
+/*        req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
         filterChain.doFilter(req,resp);*/
     }

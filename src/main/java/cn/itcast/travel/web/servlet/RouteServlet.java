@@ -29,12 +29,6 @@ public class RouteServlet extends BaseServlet {
         String currentPageStr = request.getParameter("currentPage");
         String pageSizeStr = request.getParameter("pageSize");
         String cidStr = request.getParameter("cid");
-
-        //接收rname线路名称
-        String rname = request.getParameter("rname");
-        //解觉乱码问题 tomcat8 可自动解决
-        rname = new String(rname.getBytes("iso-8859-1"),"utf-8");
-
         //2处理参数
         int cid = 0; //类别id
         if (cidStr != null && cidStr.length() > 0){
@@ -53,7 +47,7 @@ public class RouteServlet extends BaseServlet {
             pageSize = 5;
         }
         //3 调用service查询pagebean对象
-        PageBean<Route> pb = service.pageQuery(cid, currentPage, pageSize,rname);
+        PageBean<Route> pb = service.pageQuery(cid, currentPage, pageSize);
         //4 将pagebean对象序列化为json返回
         writeValue(pb,response);
     }

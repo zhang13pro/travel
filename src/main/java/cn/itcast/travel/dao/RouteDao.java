@@ -11,7 +11,7 @@ import java.util.List;
  */
 public interface RouteDao {
     //* 根据cid查询总记录数
-    int findTotalCount(int cid,String rname);
+    int findTotalCount(int cid);
     //根据cid  start pageSize 查询当前页的数据集合
-    List<Route> findByPage(int cid,int start,int pageSize,String rname);
+    List<Route> findByPage(int cid,int start,int pageSize);
 }
